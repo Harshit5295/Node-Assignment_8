@@ -1,0 +1,47 @@
+doctype html
+html
+  head
+    title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity='sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ', crossorigin='anonymous')
+
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js', integrity='sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n', crossorigin='anonymous')
+
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js', integrity='sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb', crossorigin='anonymous')
+
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js', integrity='sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn', crossorigin='anonymous')
+
+    script(src='https://code.jquery.com/jquery-3.2.1.js', integrity='sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=', crossorigin='anonymous')
+
+    link(href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+  body
+    .container
+      .row
+        .col-lg-6.col-xs-12
+          p New to System, Please signup first
+          form(method='post', action='http://localhost:3000/admin/signup')
+            label(for='name') Name
+            input(type='text', name='name', placeholder='Your name..')
+            br
+            label(for='email') Email
+            input(type='text', name='email', placeholder='Your Email..')
+            br
+            label(for='number') mobile
+            input(type='text', name='mobile', placeholder='Your Number..')
+            br
+            label(for='password') Password
+            input(type='password', name='password', placeholder='Your Password..')
+            br
+            input(type='submit', value='Sign Up')
+        .col-lg-6.col-xs-12
+          p Existing Admin, Please Login
+          form(method='post', action='http://localhost:3000/admin/login')
+            label(for='name') Email ID
+            input(type='text', name='email', placeholder='Your Email..')
+            br
+            label(for='password') Password
+            input(type='password', name='password', placeholder='Your Password..')
+            br
+            input(type='submit', value='Log In')

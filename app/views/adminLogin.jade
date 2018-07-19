@@ -1,0 +1,17 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+    title Log In Form
+  body
+    section.container
+      .login
+        h1 Log In to the Web App
+        form(method='post', action='http://localhost:3000/admin/login')
+          p
+            input(type='email', name='email', value='', placeholder='Email', required='true')
+          p
+            input(type='password', name='password', value='', placeholder='Password', required='true')
+          p.submit
+            input(type='submit', name='', value='Log In')

@@ -1,0 +1,17 @@
+{
+  "name": "NodeMall",
+  "version": "0.0.1",
+  "private": false,
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "latest",
+    "cookie-parser": "latest",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "jade": "^1.11.0",
+    "mongoose": "^4.5.0",
+    "morgan": "^1.7.0",
+    "pug": "^2.0.0-beta3",
+    "req-flash": "0.0.3"
+  }
+}

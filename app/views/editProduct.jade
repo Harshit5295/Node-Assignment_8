@@ -1,0 +1,25 @@
+doctype html
+html
+  head
+    title Edit Product
+  body
+    form(method='put', action='http://localhost:3000/edit-product/#{_id}')
+      h1 Category
+      input(type='text', name='category', value='#{category}')
+      br
+      h1 Model
+      input(type='text', name='model', value='#{model}')
+      br
+      h1 Price
+      input(type='text', name='price', value='#{price}')
+      br
+      h1 Color
+      input(type='text', name='productColor', value='#{productColor}')
+      br
+      h1 Seller
+      input(type='text', name='seller', value='#{seller}')
+      br
+      h1 Description
+      input(type='text', name='description', value='#{description}')
+      br
+      button Save
